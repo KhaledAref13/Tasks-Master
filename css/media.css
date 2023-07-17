@@ -1,0 +1,79 @@
+@media (max-width: 575.98px) {
+  .to-do-app {
+    padding: 20px 10px;
+  }
+  .header {
+    height: 55px;
+  }
+  .header-title {
+    font-size: 20px;
+  }
+  .header-buttons button {
+    padding: 10px 0;
+    width: 100px;
+  }
+  .task-name-time {
+    flex-direction: column;
+  }
+  .task-name-time input {
+    width: 100%;
+  }
+  .task-description {
+    min-height: 80px;
+  }
+  .show {
+    height: 205px;
+  }
+  .empty-div {
+    gap: 30px;
+  }
+  .empty-img {
+    width: 100%;
+  }
+  .empty-content {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .to-do-app {
+    padding: 20px 10px;
+  }
+  .header {
+    height: 55px;
+  }
+  .header-title {
+    font-size: 20px;
+  }
+  .header-buttons button {
+    padding: 10px 0;
+    width: 100px;
+  }
+  .task-name-time {
+    flex-direction: column;
+  }
+  .task-name-time input {
+    width: 100%;
+  }
+  .task-description {
+    min-height: 80px;
+  }
+  .show {
+    height: 205px;
+  }
+  .empty-div {
+    gap: 30px;
+  }
+  .empty-img {
+    width: 100%;
+  }
+  .empty-content {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .empty-img {
+    width: 80%;
+  }
+}
