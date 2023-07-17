@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --primary-color: #fff;
+  --secondary-color: #5964cd;
+  --red-color: rgb(210, 63, 63);
+}
+.to-do-app {
+  background-color: var(--main-color);
+  padding: 20px 100px;
+}
+.header {
+  padding: 10px;
+  height: 55px;
+  overflow: hidden;
+  transition-duration: 0.5s;
+}
+.header-title-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-title {
+  flex-basis: 50%;
+  color: var(--secondary-color);
+}
+.header-buttons {
+  flex-basis: 50%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header-buttons button {
+  position: absolute;
+  padding: 13px 0;
+  width: 120px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.header-buttons .add-task {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.header-buttons .close-task {
+  display: none;
+  background-color: var(--red-color);
+  color: var(--primary-color);
+}
+.task-form {
+  margin-top: 20px;
+  border-radius: 4px;
+  padding: 20px;
+  background-color: rgba(89, 100, 205, 0.6);
+}
+.show {
+  height: 205px;
+}
+.task-name-time {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.task-name-time input {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--primary-color);
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+.task-name-time input::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+.task-description {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+.task-description::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+.form-buttons {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 5px;
+  height: 40px;
+}
+.form-buttons button {
+  position: absolute;
+  width: 100px;
+  padding: 10px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+.form-edit-task {
+  display: none;
+}
+.all-tasks {
+  padding: 10px;
+  margin-top: 15px;
+}
+.tasks-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.task {
+  background-color: rgba(89, 100, 205, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+.task:last-child {
+  margin-bottom: 0;
+}
+.task-status-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 65%;
+}
+.task-status-title .task-title {
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.task-actions {
+  background-color: var(--primary-color);
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+  border-radius: 4px;
+}
+.total-tasks {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.task-actions i {
+  cursor: pointer;
+}
+.task-actions .fa-pen {
+  color: green;
+}
+.task-actions .fa-trash {
+  color: var(--red-color);
+}
+.empty-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+.empty-img {
+  width: 60%;
+}
+.empty-content {
+  font-size: 20px;
+  font-weight: 600;
+}
